@@ -1,0 +1,68 @@
+[
+{"label":"already_paid","invoice":{"id":"INV-3001","customer":"Willow Analytics (synthetic)","amount":5100,"amount_paid":0,"due_date":"2026-10-06","days_past_due":45},
+ "thread":[{"from":"us","days_ago":6,"text":"Hi, INV-3001 is still open on our side."},
+           {"from":"customer","days_ago":5,"text":"Payment went out on the 2nd, here is the payment reference: TRX-88211."}]},
+{"label":"already_paid","invoice":{"id":"INV-3002","customer":"Garnet Clinics (synthetic)","amount":760,"amount_paid":0,"due_date":"2026-10-26","days_past_due":25},
+ "thread":[{"from":"us","days_ago":3,"text":"Reminder for INV-3002."},
+           {"from":"customer","days_ago":2,"text":"This was settled two weeks ago with our batch transfer."}]},
+
+{"label":"short_paid","invoice":{"id":"INV-3011","customer":"Juniper Hotels (synthetic)","amount":8800,"amount_paid":8000,"due_date":"2026-10-09","days_past_due":42},
+ "thread":[{"from":"us","days_ago":5,"text":"There's 800 left on INV-3011."},
+           {"from":"customer","days_ago":4,"text":"We deducted the late delivery penalty per our contract."}]},
+{"label":"short_paid","invoice":{"id":"INV-3012","customer":"Sterling Print (synthetic)","amount":3600,"amount_paid":0,"due_date":"2026-10-15","days_past_due":36},
+ "thread":[{"from":"us","days_ago":7,"text":"Following up on INV-3012."},
+           {"from":"customer","days_ago":6,"text":"The unit price doesn't match the quote we signed, please reissue at the agreed price."}]},
+
+{"label":"portal_rejected","invoice":{"id":"INV-3021","customer":"Beacon Utilities (synthetic)","amount":19500,"amount_paid":0,"due_date":"2026-10-03","days_past_due":48},
+ "thread":[{"from":"us","days_ago":9,"text":"Hi, any update on INV-3021?"},
+           {"from":"customer","days_ago":8,"text":"Invoices emailed to us are not processed. Please upload via our vendor portal; your last upload bounced back with an error."}]},
+{"label":"portal_rejected","invoice":{"id":"INV-3022","customer":"Mosaic Health (synthetic)","amount":2400,"amount_paid":0,"due_date":"2026-10-19","days_past_due":32},
+ "thread":[{"from":"system","days_ago":11,"text":"Tungsten: Invoice INV-3022 has been returned to supplier. Reason: duplicate invoice number."},
+           {"from":"us","days_ago":2,"text":"Checking on INV-3022."}]},
+
+{"label":"missing_po","invoice":{"id":"INV-3031","customer":"Sequoia Schools (synthetic)","amount":4300,"amount_paid":0,"due_date":"2026-10-11","days_past_due":40},
+ "thread":[{"from":"us","days_ago":5,"text":"INV-3031 reminder."},
+           {"from":"customer","days_ago":4,"text":"Our policy is no PO, no pay. Ask your sales contact for the order reference."}]},
+{"label":"missing_po","invoice":{"id":"INV-3032","customer":"Falcon Aero (synthetic)","amount":31000,"amount_paid":0,"due_date":"2026-09-29","days_past_due":52},
+ "thread":[{"from":"us","days_ago":10,"text":"Following up on INV-3032."},
+           {"from":"customer","days_ago":9,"text":"The PO on this invoice has expired, we need it billed against the new purchase order 4500-221."}]},
+
+{"label":"contact_left","invoice":{"id":"INV-3041","customer":"Redwood Legal (synthetic)","amount":6100,"amount_paid":0,"due_date":"2026-10-07","days_past_due":44},
+ "thread":[{"from":"us","days_ago":6,"text":"Hi Tom, checking on INV-3041."},
+           {"from":"system","days_ago":6,"text":"Tom has left the company. For accounts payable please contact finance-team instead."}]},
+{"label":"contact_left","invoice":{"id":"INV-3042","customer":"Indigo Dental (synthetic)","amount":980,"amount_paid":0,"due_date":"2026-10-24","days_past_due":27,"contact_bounced":true},
+ "thread":[{"from":"us","days_ago":3,"text":"Reminder: INV-3042."}]},
+
+{"label":"approval_stalled","invoice":{"id":"INV-3051","customer":"Horizon Retail (synthetic)","amount":14700,"amount_paid":0,"due_date":"2026-10-05","days_past_due":46},
+ "thread":[{"from":"us","days_ago":8,"text":"Following up on INV-3051."},
+           {"from":"customer","days_ago":7,"text":"Our department head hasn't approved it yet, I've nudged her."}]},
+{"label":"approval_stalled","invoice":{"id":"INV-3052","customer":"Polar Data (synthetic)","amount":5200,"amount_paid":0,"due_date":"2026-10-14","days_past_due":37},
+ "thread":[{"from":"us","days_ago":4,"text":"Any update on INV-3052?"},
+           {"from":"customer","days_ago":3,"text":"It's in the workflow waiting for the cost centre owner to sign off."}]},
+
+{"label":"never_received","invoice":{"id":"INV-3061","customer":"Clover Farms (synthetic)","amount":1900,"amount_paid":0,"due_date":"2026-10-18","days_past_due":33},
+ "thread":[{"from":"us","days_ago":5,"text":"INV-3061 is overdue."},
+           {"from":"customer","days_ago":4,"text":"First I'm hearing of this one. Which email did you send it to?"}]},
+{"label":"never_received","invoice":{"id":"INV-3062","customer":"Aurora Spa (synthetic)","amount":640,"amount_paid":0,"due_date":"2026-10-25","days_past_due":26},
+ "thread":[{"from":"us","days_ago":2,"text":"Reminder for INV-3062."},
+           {"from":"customer","days_ago":1,"text":"Hi, I can't find this invoice anywhere, could you resend it?"}]},
+
+{"label":"promise_broken","invoice":{"id":"INV-3071","customer":"Ember Kitchens (synthetic)","amount":7400,"amount_paid":0,"due_date":"2026-10-08","days_past_due":43,"promised_date":"2026-11-13"},
+ "thread":[{"from":"us","days_ago":12,"text":"Following up on INV-3071."},
+           {"from":"customer","days_ago":11,"text":"You'll have it by end of next week."}]},
+{"label":"promise_broken","invoice":{"id":"INV-3072","customer":"Slate Logistics (synthetic)","amount":12600,"amount_paid":0,"due_date":"2026-10-01","days_past_due":50,"promised_date":"2026-11-17"},
+ "thread":[{"from":"us","days_ago":9,"text":"Checking on INV-3072."},
+           {"from":"customer","days_ago":8,"text":"Approved, it will be paid on the 17th."}]},
+
+{"label":"genuinely_slow","invoice":{"id":"INV-3081","customer":"Kite Fitness (synthetic)","amount":2800,"amount_paid":0,"due_date":"2026-10-10","days_past_due":41},
+ "thread":[{"from":"us","days_ago":6,"text":"INV-3081 reminder."},
+           {"from":"customer","days_ago":5,"text":"We had a slow quarter. Could we pay this over three months?"}]},
+{"label":"genuinely_slow","invoice":{"id":"INV-3082","customer":"Rowan Studios (synthetic)","amount":5000,"amount_paid":0,"due_date":"2026-10-16","days_past_due":35},
+ "thread":[{"from":"us","days_ago":4,"text":"Following up on INV-3082."},
+           {"from":"customer","days_ago":3,"text":"We're waiting for our funding round to close, will pay as soon as it lands."}]},
+
+{"label":"no_reply","invoice":{"id":"INV-3091","customer":"Ash Hardware (synthetic)","amount":3300,"amount_paid":0,"due_date":"2026-10-04","days_past_due":47},
+ "thread":[{"from":"us","days_ago":20,"text":"INV-3091 reminder."},{"from":"us","days_ago":10,"text":"Second reminder for INV-3091."}]},
+{"label":"no_reply","invoice":{"id":"INV-3092","customer":"Lark Events (synthetic)","amount":1100,"amount_paid":0,"due_date":"2026-10-22","days_past_due":29},
+ "thread":[{"from":"us","days_ago":6,"text":"Checking in on INV-3092."}]}
+]

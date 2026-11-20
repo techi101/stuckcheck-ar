@@ -1,0 +1,232 @@
+{
+ "INV-3001": [
+  {
+   "from": "us",
+   "days_ago": 6,
+   "text": "Hi, INV-3001 is still open on our side."
+  },
+  {
+   "from": "customer",
+   "days_ago": 5,
+   "text": "Payment went out on the 2nd, here is the payment reference: TRX-88211."
+  }
+ ],
+ "INV-3002": [
+  {
+   "from": "us",
+   "days_ago": 3,
+   "text": "Reminder for INV-3002."
+  },
+  {
+   "from": "customer",
+   "days_ago": 2,
+   "text": "This was settled two weeks ago with our batch transfer."
+  }
+ ],
+ "INV-3011": [
+  {
+   "from": "us",
+   "days_ago": 5,
+   "text": "There's 800 left on INV-3011."
+  },
+  {
+   "from": "customer",
+   "days_ago": 4,
+   "text": "We deducted the late delivery penalty per our contract."
+  }
+ ],
+ "INV-3012": [
+  {
+   "from": "us",
+   "days_ago": 7,
+   "text": "Following up on INV-3012."
+  },
+  {
+   "from": "customer",
+   "days_ago": 6,
+   "text": "The unit price doesn't match the quote we signed, please reissue at the agreed price."
+  }
+ ],
+ "INV-3021": [
+  {
+   "from": "us",
+   "days_ago": 9,
+   "text": "Hi, any update on INV-3021?"
+  },
+  {
+   "from": "customer",
+   "days_ago": 8,
+   "text": "Invoices emailed to us are not processed. Please upload via our vendor portal; your last upload bounced back with an error."
+  }
+ ],
+ "INV-3022": [
+  {
+   "from": "system",
+   "days_ago": 11,
+   "text": "Tungsten: Invoice INV-3022 has been returned to supplier. Reason: duplicate invoice number."
+  },
+  {
+   "from": "us",
+   "days_ago": 2,
+   "text": "Checking on INV-3022."
+  }
+ ],
+ "INV-3031": [
+  {
+   "from": "us",
+   "days_ago": 5,
+   "text": "INV-3031 reminder."
+  },
+  {
+   "from": "customer",
+   "days_ago": 4,
+   "text": "Our policy is no PO, no pay. Ask your sales contact for the order reference."
+  }
+ ],
+ "INV-3032": [
+  {
+   "from": "us",
+   "days_ago": 10,
+   "text": "Following up on INV-3032."
+  },
+  {
+   "from": "customer",
+   "days_ago": 9,
+   "text": "The PO on this invoice has expired, we need it billed against the new purchase order 4500-221."
+  }
+ ],
+ "INV-3041": [
+  {
+   "from": "us",
+   "days_ago": 6,
+   "text": "Hi Tom, checking on INV-3041."
+  },
+  {
+   "from": "system",
+   "days_ago": 6,
+   "text": "Tom has left the company. For accounts payable please contact finance-team instead."
+  }
+ ],
+ "INV-3042": [
+  {
+   "from": "us",
+   "days_ago": 3,
+   "text": "Reminder: INV-3042."
+  }
+ ],
+ "INV-3051": [
+  {
+   "from": "us",
+   "days_ago": 8,
+   "text": "Following up on INV-3051."
+  },
+  {
+   "from": "customer",
+   "days_ago": 7,
+   "text": "Our department head hasn't approved it yet, I've nudged her."
+  }
+ ],
+ "INV-3052": [
+  {
+   "from": "us",
+   "days_ago": 4,
+   "text": "Any update on INV-3052?"
+  },
+  {
+   "from": "customer",
+   "days_ago": 3,
+   "text": "It's in the workflow waiting for the cost centre owner to sign off."
+  }
+ ],
+ "INV-3061": [
+  {
+   "from": "us",
+   "days_ago": 5,
+   "text": "INV-3061 is overdue."
+  },
+  {
+   "from": "customer",
+   "days_ago": 4,
+   "text": "First I'm hearing of this one. Which email did you send it to?"
+  }
+ ],
+ "INV-3062": [
+  {
+   "from": "us",
+   "days_ago": 2,
+   "text": "Reminder for INV-3062."
+  },
+  {
+   "from": "customer",
+   "days_ago": 1,
+   "text": "Hi, I can't find this invoice anywhere, could you resend it?"
+  }
+ ],
+ "INV-3071": [
+  {
+   "from": "us",
+   "days_ago": 12,
+   "text": "Following up on INV-3071."
+  },
+  {
+   "from": "customer",
+   "days_ago": 11,
+   "text": "You'll have it by end of next week."
+  }
+ ],
+ "INV-3072": [
+  {
+   "from": "us",
+   "days_ago": 9,
+   "text": "Checking on INV-3072."
+  },
+  {
+   "from": "customer",
+   "days_ago": 8,
+   "text": "Approved, it will be paid on the 17th."
+  }
+ ],
+ "INV-3081": [
+  {
+   "from": "us",
+   "days_ago": 6,
+   "text": "INV-3081 reminder."
+  },
+  {
+   "from": "customer",
+   "days_ago": 5,
+   "text": "We had a slow quarter. Could we pay this over three months?"
+  }
+ ],
+ "INV-3082": [
+  {
+   "from": "us",
+   "days_ago": 4,
+   "text": "Following up on INV-3082."
+  },
+  {
+   "from": "customer",
+   "days_ago": 3,
+   "text": "We're waiting for our funding round to close, will pay as soon as it lands."
+  }
+ ],
+ "INV-3091": [
+  {
+   "from": "us",
+   "days_ago": 20,
+   "text": "INV-3091 reminder."
+  },
+  {
+   "from": "us",
+   "days_ago": 10,
+   "text": "Second reminder for INV-3091."
+  }
+ ],
+ "INV-3092": [
+  {
+   "from": "us",
+   "days_ago": 6,
+   "text": "Checking in on INV-3092."
+  }
+ ]
+}

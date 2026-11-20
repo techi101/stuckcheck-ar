@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>stuckcheck · AR inbox</title>
+<meta name="description" content="Demo: a collections inbox that tells you why each overdue invoice is late and drafts the follow-up that fits the cause. Synthetic data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23173D32'/%3E%3Cpath d='M9 17l4.5 4.5L23 11' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./" aria-label="stuckcheck home">
+      <span class="logo" aria-hidden="true"><svg viewBox="0 0 32 32"><rect width="32" height="32" rx="7"/><path d="M9 17l4.5 4.5L23 11"/></svg></span>
+      <span class="brand-name">stuckcheck</span>
+      <span class="brand-sep">/</span>
+      <span class="brand-page">Collections inbox</span>
+    </a>
+    <div class="topbar-right">
+      <span class="pill-synthetic" title="Every customer, invoice and email on this page was written by hand for the demo">Synthetic data</span>
+      <a class="gh" href="https://github.com/techi101/stuckcheck-ar"><span class="long">Code on </span>GitHub</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="intro">
+    <h1>Why is each overdue invoice late?</h1>
+    <p class="lede">stuckcheck reads the AR aging file and each invoice's email thread, names the blocker, and drafts the follow-up that fits it. <strong>Click any invoice</strong> to see the evidence and the email.</p>
+  </section>
+
+  <section class="kpis" id="kpis" aria-label="Summary"></section>
+
+  <section class="causebar" aria-label="Filter by cause">
+    <div class="causebar-head">
+      <h2>Why it's stuck</h2>
+      <span class="hint">Click a cause to filter</span>
+    </div>
+    <div class="chips" id="chips" role="tablist"></div>
+  </section>
+
+  <section class="inbox">
+    <div class="list-pane">
+      <div class="list-toolbar">
+        <div class="search">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="6"/><path d="M14 14l4 4"/></svg>
+          <input id="q" type="search" placeholder="Search customer or invoice" aria-label="Search customer or invoice">
+        </div>
+        <label class="sort">Sort
+          <select id="sort">
+            <option value="open">Open amount</option>
+            <option value="dpd">Days overdue</option>
+            <option value="customer">Customer</option>
+          </select>
+        </label>
+      </div>
+      <div class="table-box">
+        <table class="inv-table" aria-label="Overdue invoices">
+          <thead>
+            <tr>
+              <th>Customer</th>
+              <th class="num">Open</th>
+              <th class="num">Days overdue</th>
+              <th>Why stuck</th>
+              <th>Evidence</th>
+              <th aria-label="Open"></th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+        <div class="empty" id="empty" hidden>No invoices match. <button class="linkbtn" id="clear">Clear filters</button></div>
+      </div>
+      <p class="list-foot" id="listfoot"></p>
+    </div>
+
+    <aside class="detail" id="detail" aria-label="Invoice detail" aria-live="polite"></aside>
+  </section>
+
+  <section class="method" id="method">
+    <h2>How the numbers were made</h2>
+    <div class="method-grid">
+      <div>
+        <h3>The tool</h3>
+        <p>A rules-based Python classifier (standard library, no LLM, no network). It scores 10 causes from ledger fields and from phrases in the customer's replies, newest reply weighted 2x. If a customer replied and nothing matched, it says <em>Needs review</em> instead of guessing.</p>
+      </div>
+      <div>
+        <h3>The data</h3>
+        <p>20 synthetic overdue invoices with hand-written email threads (the holdout set). Names end in "(synthetic)". No real customer, invoice or person is used. Results as of <span id="asof"></span>.</p>
+      </div>
+      <div>
+        <h3>Accuracy</h3>
+        <p id="evaltext"></p>
+      </div>
+    </div>
+    <p class="disclaimer">Independent proof of work for Alder (meetalder.com). Not Alder's product, code or data. Drafts are never sent.</p>
+  </section>
+</main>
+
+<div class="scrim" id="scrim" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>

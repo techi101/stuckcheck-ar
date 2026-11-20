@@ -1,5 +1,15 @@
 # stuckcheck: why is this invoice late?
 
+**[Try it live: stuckcheck-ar.vercel.app](https://stuckcheck-ar.vercel.app)** (no install, synthetic data)
+
+[![stuckcheck collections inbox](docs/screenshot_1440.png)](https://stuckcheck-ar.vercel.app)
+
+**Problem:** dunning tools send the same reminder to every overdue customer, whether they already paid, need a PO, or had the invoice rejected by a portal.
+
+**Result:** on 20 synthetic overdue invoices, stuckcheck found 13 stuck on a fixable blocker ($99,620 of $129,180 open), sent 4 it could not explain to a human instead of guessing, and drafted a different follow-up for each cause. Holdout accuracy 16/20, with 0 wrong confident labels.
+
+<img src="docs/screenshot_390.png" width="240" alt="Mobile inbox"> <img src="docs/screenshot_390_detail.png" width="240" alt="Mobile invoice detail with draft email">
+
 A small, offline, rules-based tool that reads an AR aging export plus each invoice's email thread,
 labels every overdue invoice with a likely **cause**, and drafts a **cause-specific** follow-up
 (plus an internal next step). Built as a proof of work for Alder (meetalder.com, formerly Nivara, YC F25).
@@ -38,6 +48,9 @@ anything?
   table and a headline, writes all drafts to `out/followups.md`.
 - `stuckcheck/evaluate.py`: accuracy on labelled sets.
 
+The demo page in `site/` is plain HTML/CSS/JS; it reads `site/data.json`, which `scripts/export_site_data.py`
+generates from the real classifier + drafter output. Deploy: `cd site && vercel --prod`.
+
 Python 3.12, standard library only. No network calls, no LLM. Tests use pytest.
 
 ## How to run
@@ -47,6 +60,7 @@ python -m stuckcheck.evaluate                 # accuracy on dev + holdout
 python -m stuckcheck.cli data/demo_aging.csv data/demo_threads.json
 python -m pytest -q
 python scripts/build_demo.py                  # rebuilds the demo CSV/threads from the holdout set
+python scripts/export_site_data.py            # writes site/data.json for the live demo page
 ```
 
 ## Results (actual output, 20 Nov 2026)

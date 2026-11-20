@@ -81,9 +81,11 @@ def draft(invoice: dict, result: Result) -> dict:
         "dpd": invoice.get("days_past_due", "several"),
     }
     next_step, body = TEMPLATES[result.label]
+    text = body.format(**fields)
+    text = text[0].upper() + text[1:]  # templates may open with "{inv}"
     greeting = f"Hi {invoice.get('contact_first_name') or 'there'},"
     return {
         "subject": f"Re: Invoice {invoice['id']}",
-        "body": f"{greeting}\n\n{body.format(**fields)}\n\nThanks,\n{{your name}}",
+        "body": f"{greeting}\n\n{text}\n\nThanks,\n{{your name}}",
         "next_step": next_step,
     }

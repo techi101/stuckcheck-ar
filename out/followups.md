@@ -113,7 +113,7 @@ Subject: Re: Invoice INV-3031
 ```
 Hi there,
 
-invoice INV-3031 needs a PO number to be processed on your side. Could you send the PO for this order, or point us to the person who raised it? We'll reissue the invoice with it straight away.
+Invoice INV-3031 needs a PO number to be processed on your side. Could you send the PO for this order, or point us to the person who raised it? We'll reissue the invoice with it straight away.
 
 Thanks,
 {your name}
@@ -130,7 +130,7 @@ Subject: Re: Invoice INV-3032
 ```
 Hi there,
 
-invoice INV-3032 needs a PO number to be processed on your side. Could you send the PO for this order, or point us to the person who raised it? We'll reissue the invoice with it straight away.
+Invoice INV-3032 needs a PO number to be processed on your side. Could you send the PO for this order, or point us to the person who raised it? We'll reissue the invoice with it straight away.
 
 Thanks,
 {your name}
